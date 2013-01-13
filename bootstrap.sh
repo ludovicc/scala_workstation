@@ -106,6 +106,7 @@ recipes:
 - roderik_workstation::sublime_packages
 - roderik_workstation::inputrc
 - kmachine::update
+- kmachine::kms
 - kmachine::ssh_config
 - kmachine::kstrano
 - kmachine::vagrant
@@ -113,9 +114,6 @@ recipes:
 - kmachine::apache_kdeploy
 - kmachine::phpconfig
 EOF
-
-#- roderik_workstation::bashrc
-#- kmachine::kms
 
 
 if [[ -d pivotal_workstation ]]; then

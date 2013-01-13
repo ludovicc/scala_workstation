@@ -12,7 +12,7 @@ cat > soloistrc <<EOF
 cookbook_paths:
 - $PWD
 recipes:
-- pivotal_workstation::bash_it
+- kmachine::kms
 EOF
 
 #- roderik_workstation::bashrc
