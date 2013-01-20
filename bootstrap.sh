@@ -55,6 +55,7 @@ recipes:
 - pivotal_workstation::tower
 - pivotal_workstation::kaleidoscope2
 - pivotal_workstation::omnigraffle
+- pivotal_workstation::vlc
 - pivotal_workstation::standby-delay
 - pivotal_workstation::expand_save_panel_by_default
 - pivotal_workstation::increase_window_resize_speed_for_cocoa_applications
