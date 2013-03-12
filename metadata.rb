@@ -1,5 +1,5 @@
-maintainer        "Roderik van der Veer"
-maintainer_email  "roderik@vanderveer.be"
+maintainer        "Ludovic Claude"
+maintainer_email  "ludovic.claude@laposte.net"
 license           "MIT"
 description       "My personal settings"
 long_description  IO.read(File.join(File.dirname(__FILE__), 'README.md'))

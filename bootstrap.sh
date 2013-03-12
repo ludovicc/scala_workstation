@@ -55,7 +55,6 @@ recipes:
 - pivotal_workstation::tower
 - pivotal_workstation::kaleidoscope2
 - pivotal_workstation::omnigraffle
-- pivotal_workstation::vlc
 - pivotal_workstation::standby-delay
 - pivotal_workstation::expand_save_panel_by_default
 - pivotal_workstation::increase_window_resize_speed_for_cocoa_applications
@@ -106,16 +105,7 @@ recipes:
 - pivotal_workstation::prevent_time_machine_from_prompting_to_use_new_hard_drives_as_backup_volume
 - roderik_workstation::sublime_packages
 - roderik_workstation::inputrc
-- kmachine::update
-- kmachine::kms
-- kmachine::ssh_config
-- kmachine::kstrano
-- kmachine::vagrant
-- kmachine::kdeploy
-- kmachine::apache_kdeploy
-- kmachine::phpconfig
 EOF
-
 
 if [[ -d pivotal_workstation ]]; then
   cd pivotal_workstation && git pull && cd ..
@@ -132,4 +122,5 @@ if [[ -d roderik_workstation ]]; then
 else
   git clone https://github.com/roderik/roderik_workstation.git
 fi
+
 soloist
