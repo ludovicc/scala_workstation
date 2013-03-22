@@ -6,7 +6,7 @@ node.override['bash_it'] ={
   },
   'custom_plugins' => {
       "pivotal_workstation" => %w[bash_it/custom/ensure_usr_local_bin_first.bash],
-      "roderik_workstation" => %w[
+      "scala_workstation" => %w[
         bash_it/custom/aliases.bash
         bash_it/custom/base.bash
         bash_it/custom/exports.bash

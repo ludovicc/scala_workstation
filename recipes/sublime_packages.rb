@@ -5,5 +5,5 @@ sublime_user_path = sublime_package_path.dup << "User"
 
 begin
   t = resources(:template => File.expand_path("Preferences.sublime-settings", File.join(sublime_user_path)))
-  t.cookbook "roderik_workstation"
+  t.cookbook "scala_workstation"
 end

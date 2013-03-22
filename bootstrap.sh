@@ -12,27 +12,16 @@ cat > soloistrc <<EOF
 cookbook_paths:
 - $PWD
 recipes:
-- pivotal_workstation::create_var_chef_cache
-- pivotal_workstation::xquartz
-- pivotal_workstation::locate_on
-- pivotal_workstation::1password
-- pivotal_workstation::gem_setup
-- pivotal_workstation::bash4
-- pivotal_workstation::bash_it
-- pivotal_workstation::bash_completion
+- scala_workstation::meta_osx_base
+- scala_workstation::meta_osx_development
 - pivotal_workstation::coreutils
 - pivotal_workstation::findutils
-- pivotal_workstation::wget
 - pivotal_workstation::pwgen
 - pivotal_workstation::siege
 - pivotal_workstation::xmlstarlet
 - pivotal_workstation::watch
 - pivotal_workstation::rvm
 - pivotal_workstation::alfred
-- pivotal_workstation::chrome
-- pivotal_workstation::dropbox
-- pivotal_workstation::firefox
-- pivotal_workstation::github_for_mac
 - pivotal_workstation::bartender
 - pivotal_workstation::istatmenus
 - pivotal_workstation::phpstorm
