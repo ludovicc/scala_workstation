@@ -17,6 +17,7 @@ cookbook_paths:
 recipes:
 - scala_workstation::meta_osx_base
 - scala_workstation::meta_osx_development
+- scala_workstation::meta_scala_development
 EOF
 #- pivotal_workstation::coreutils
 #- pivotal_workstation::findutils
