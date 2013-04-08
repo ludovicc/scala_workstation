@@ -1,8 +1,8 @@
 node.override['bash_it'] ={
   'enabled_plugins' => {
-    'aliases'    => %w[general],
-    'completion' => %w[defaults git brew gem rake ssh],
-    'plugins'    => %w[base git rvm ssh vagrant ]
+    'aliases'    => %w[general git textmate],
+    'completion' => %w[defaults git git_flow brew gem rake ssh],
+    'plugins'    => %w[base browser fasd git java osx python rvm ssh tmux vagrant ]
   },
   'custom_plugins' => {
       "pivotal_workstation" => %w[bash_it/custom/ensure_usr_local_bin_first.bash],
