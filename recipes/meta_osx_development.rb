@@ -19,5 +19,7 @@ include_recipe "pivotal_workstation::ack"
 include_recipe "pivotal_workstation::tcp_keepalive"
 include_recipe "pivotal_workstation::xquartz"
 include_recipe "pivotal_workstation::wget"
+include_recipe "scala_workstation::solarized_terminal_settings"
+
 # include_recipe "pivotal_workstation::keycastr"
 # include_recipe "pivotal_workstation::speed_up_mission_control_animations"
