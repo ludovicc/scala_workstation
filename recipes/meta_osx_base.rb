@@ -14,6 +14,8 @@ include_recipe "pivotal_workstation::bettertouchtool"
 include_recipe "pivotal_workstation::1password"
 include_recipe "pivotal_workstation::dropbox"
 include_recipe "pivotal_workstation::evernote"
-
+include_recipe "pivotal_workstation::flowdock"
+include_recipe "pivotal_workstation::timemachine_preferences"
+    		
 # include_recipe "pivotal_workstation::sshd_on"
 
