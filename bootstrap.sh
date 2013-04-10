@@ -9,11 +9,13 @@ else
   sudo gem install soloist
 fi
 
-mkdir -p ~/cookbooks; cd ~/cookbooks
+mkdir -p ~/Cookbooks; cd ~/Cookbooks
 
 cat > soloistrc <<EOF
 cookbook_paths:
 - $PWD
+node_attributes:
+  workspace_directory: Projects
 recipes:
 - scala_workstation::meta_osx_base
 - scala_workstation::meta_osx_development

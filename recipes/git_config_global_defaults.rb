@@ -41,7 +41,11 @@ ds \"diff --staged\"
 fixup \"commit --fixup\"
 squash \"commit --squash\"
 unstage \"reset HEAD\"
-rum rebase master@{u}
+rum \"rebase master@{u}\"
+assume \"update-index --assume-unchanged\"
+unassume \"update-index --no-assume-unchanged\"
+assumed \"!git ls-files -v | grep ^h | cut -c 3-\"
+snapshot \"!git stash save \\\"snapshot: \\\$(date)\\\" && git stash apply \\\"stash@{0}\\\"\"
 EOF
 
 aliases.split("\n").each do |alias_string|
@@ -95,5 +99,10 @@ end
 
 execute "set diff algorithm=patience" do
     command "git config --global diff.algorithm patience"
+    user WS_USER
+end
+
+execute "set push default=simple" do
+    command "git config --global push.default simple"
     user WS_USER
 end
